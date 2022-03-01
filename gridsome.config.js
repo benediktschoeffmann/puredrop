@@ -37,8 +37,23 @@ module.exports = {
         },
       },
     },
-    // Netlify CMS Plugin
 
+    // Load Products from file system
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'content/products/**/*.md',
+        typeName: 'Product',
+        refs: {
+          tags: {
+            typeName: 'Tag',
+            create: true,
+          },
+        },
+      },
+    },
+
+    // Netlify CMS Plugin
     {
       use: `gridsome-plugin-netlify-cms`,
       options: {
@@ -64,6 +79,12 @@ module.exports = {
       {
         path: '/author/:title',
         componenent: '~/templates/Author.vue',
+      },
+    ],
+    Product: [
+      {
+        path: '/products/:name/:date',
+        componenent: '~/templates/Product.vue',
       },
     ],
   },

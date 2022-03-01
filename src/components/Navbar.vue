@@ -9,11 +9,14 @@
       </b-navbar-item>
     </template>
     <template slot="start">
+
+    </template>
+
+    <template slot="end"> 
       <b-navbar-item to="/about" tag="router-link">
         About
       </b-navbar-item>
+    
     </template>
-
-    <template slot="end"> </template>
   </b-navbar>
 </template>

@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: chad-collins/gridsome-starter-netlifycms-buefy
+  repo: benediktschoeffmann/puredrop
 
 media_folder: 'static/uploads'
 public_folder: 'uploads'
@@ -48,3 +48,15 @@ collections:
       - { label: 'Link', name: 'link', widget: 'string' }
       - { label: 'Author Image', name: 'image', widget: 'image' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'products'
+    label: 'Products'
+    folder: 'content/products'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}--{{name}}'
+    fields:
+      - { label: 'Name', name: 'name', widget: 'string'}
+      - { label: "Date", name: "date", widget: "date"}
+      - { label: "Image", name: "image", widget: "image"}
+      - { label: 'Description', name: 'description', widget: 'string'}
+      - { label: 'Price', name: 'price', widget: 'string'}
+      - { label: 'Body', name: 'body', widget: 'markdown'}
