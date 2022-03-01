@@ -1,5 +1,6 @@
 ---
 name: Hoodlum Hoodie
+date: 2022-03-01T13:47:57.650Z
 image: uploads/hoodie.jpg
 description: Urban Streetwear
 price: "123"
