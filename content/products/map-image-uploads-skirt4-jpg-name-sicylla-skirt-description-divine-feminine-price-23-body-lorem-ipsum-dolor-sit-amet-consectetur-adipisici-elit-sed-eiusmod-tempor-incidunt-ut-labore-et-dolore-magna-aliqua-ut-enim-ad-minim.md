@@ -1,5 +1,6 @@
 ---
 name: Sicylla Skirt
+date: 2022-03-01T13:47:40.948Z
 image: uploads/skirt4.jpg
 description: "Divine Feminine "
 price: "23"
