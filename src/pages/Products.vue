@@ -21,17 +21,20 @@
                         <div class="media-content">
                           <p class="title is-4">{{ edge.node.name }}</p>
                           <p class="subtitle is-6">{{ edge.node.description }}</p>
+                          <div class="level">
+                            <div class="level-right">
+                              <div class="level-item">
+                                {{ edge.node.price }} € 
+                              </div> 
+                            </div>
+                          </div>
+
                         </div>
                       
-
-                        
                       </div>
                     </div>
-                    <footer class="card-footer">
-                      <span class="card-footer-item"></span>
-                      <span class="card-footer-item"></span>
-                      <span class="card-footer-item"> {{ edge.node.price }} </span>
-                    </footer>
+                    
+                    
                   
                   </g-link>
                 </div>
@@ -69,4 +72,12 @@ query {
 </script>
 
 <style>
+.card {
+  margin-bottom: 15px;
+  padding: 5px;
+}
+
+.card-image {
+  width: 300px;
+}
 </style>
